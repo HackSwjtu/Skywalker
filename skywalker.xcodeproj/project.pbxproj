@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7566B20C1F7E026E00AD7BE0 /* MethodTraceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7566B20B1F7E026E00AD7BE0 /* MethodTraceConfig.plist */; };
+		7566B20F1F7E026E00AD7BE0 /* put ipa or app here in Resources */ = {isa = PBXBuildFile; fileRef = 7566B20E1F7E026E00AD7BE0 /* put ipa or app here */; };
+		7566B2171F7E026E00AD7BE0 /* libskywalkerDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7566B2161F7E026E00AD7BE0 /* libskywalkerDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		7566B21C1F7E026E00AD7BE0 /* Cycript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7566B21B1F7E026E00AD7BE0 /* Cycript.framework */; };
+		7566B21E1F7E026E00AD7BE0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7566B21D1F7E026E00AD7BE0 /* JavaScriptCore.framework */; };
+		7566B2201F7E026E00AD7BE0 /* RevealServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7566B21F1F7E026E00AD7BE0 /* RevealServer.framework */; };
+		7566B2221F7E026E00AD7BE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7566B2211F7E026E00AD7BE0 /* Foundation.framework */; };
+		7566B2241F7E026E00AD7BE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7566B2231F7E026E00AD7BE0 /* UIKit.framework */; };
+		7566B22A1F7E026E00AD7BE0 /* CaptainHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 7566B2291F7E026E00AD7BE0 /* CaptainHook.h */; };
+		7566B22D1F7E026E00AD7BE0 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 7566B22C1F7E026E00AD7BE0 /* AntiAntiDebug.m */; };
+		7566B2301F7E026E00AD7BE0 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 7566B22F1F7E026E00AD7BE0 /* fishhook.c */; };
+		7566B2321F7E026E00AD7BE0 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 7566B2311F7E026E00AD7BE0 /* fishhook.h */; };
+		7566B2351F7E026E00AD7BE0 /* skywalkerDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7566B2341F7E026E00AD7BE0 /* skywalkerDylib.mm */; };
+		7566B2371F7E026E00AD7BE0 /* skywalkerDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 7566B2361F7E026E00AD7BE0 /* skywalkerDylib.h */; };
+		7566B2391F7E026E00AD7BE0 /* skywalkerDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 7566B2381F7E026E00AD7BE0 /* skywalkerDylib.m */; };
+		7566B2431F7E029600AD7BE0 /* skywalker.ipa in Resources */ = {isa = PBXBuildFile; fileRef = 7566B2421F7E029600AD7BE0 /* skywalker.ipa */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7566B2181F7E026E00AD7BE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7566B1FD1F7E026E00AD7BE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7566B2151F7E026E00AD7BE0;
+			remoteInfo = skywalkerDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7566B2051F7E026E00AD7BE0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7566B2171F7E026E00AD7BE0 /* libskywalkerDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7566B2081F7E026E00AD7BE0 /* skywalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skywalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7566B20B1F7E026E00AD7BE0 /* MethodTraceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MethodTraceConfig.plist; sourceTree = "<group>"; };
+		7566B20E1F7E026E00AD7BE0 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		7566B2101F7E026E00AD7BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7566B2161F7E026E00AD7BE0 /* libskywalkerDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libskywalkerDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		7566B21B1F7E026E00AD7BE0 /* Cycript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cycript.framework; path = Library/Frameworks/Cycript.framework; sourceTree = DEVELOPER_DIR; };
+		7566B21D1F7E026E00AD7BE0 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		7566B21F1F7E026E00AD7BE0 /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RevealServer.framework; path = Library/Frameworks/RevealServer.framework; sourceTree = DEVELOPER_DIR; };
+		7566B2211F7E026E00AD7BE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7566B2231F7E026E00AD7BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7566B2271F7E026E00AD7BE0 /* skywalkerDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "skywalkerDylib-Prefix.pch"; sourceTree = "<group>"; };
+		7566B2291F7E026E00AD7BE0 /* CaptainHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CaptainHook.h; path = CaptainHook/CaptainHook.h; sourceTree = "<group>"; };
+		7566B22C1F7E026E00AD7BE0 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		7566B22F1F7E026E00AD7BE0 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		7566B2311F7E026E00AD7BE0 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		7566B2331F7E026E00AD7BE0 /* skywalkerDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = skywalkerDylib.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		7566B2341F7E026E00AD7BE0 /* skywalkerDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = skywalkerDylib.mm; sourceTree = "<group>"; };
+		7566B2361F7E026E00AD7BE0 /* skywalkerDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = skywalkerDylib.h; sourceTree = "<group>"; };
+		7566B2381F7E026E00AD7BE0 /* skywalkerDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = skywalkerDylib.m; sourceTree = "<group>"; };
+		7566B2421F7E029600AD7BE0 /* skywalker.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; name = skywalker.ipa; path = TargetApp/skywalker.ipa; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7566B2021F7E026E00AD7BE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7566B2131F7E026E00AD7BE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7566B21E1F7E026E00AD7BE0 /* JavaScriptCore.framework in Frameworks */,
+				7566B2201F7E026E00AD7BE0 /* RevealServer.framework in Frameworks */,
+				7566B21C1F7E026E00AD7BE0 /* Cycript.framework in Frameworks */,
+				7566B2221F7E026E00AD7BE0 /* Foundation.framework in Frameworks */,
+				7566B2241F7E026E00AD7BE0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7566B1FC1F7E026E00AD7BE0 = {
+			isa = PBXGroup;
+			children = (
+				7566B20A1F7E026E00AD7BE0 /* skywalker */,
+				7566B2251F7E026E00AD7BE0 /* skywalkerDylib */,
+				7566B21A1F7E026E00AD7BE0 /* Frameworks */,
+				7566B2091F7E026E00AD7BE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7566B2091F7E026E00AD7BE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7566B2081F7E026E00AD7BE0 /* skywalker.app */,
+				7566B2161F7E026E00AD7BE0 /* libskywalkerDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7566B20A1F7E026E00AD7BE0 /* skywalker */ = {
+			isa = PBXGroup;
+			children = (
+				7566B20B1F7E026E00AD7BE0 /* MethodTraceConfig.plist */,
+				7566B2101F7E026E00AD7BE0 /* Info.plist */,
+				7566B20D1F7E026E00AD7BE0 /* TargetApp */,
+			);
+			path = skywalker;
+			sourceTree = "<group>";
+		};
+		7566B20D1F7E026E00AD7BE0 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				7566B2421F7E029600AD7BE0 /* skywalker.ipa */,
+				7566B20E1F7E026E00AD7BE0 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		7566B21A1F7E026E00AD7BE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7566B21B1F7E026E00AD7BE0 /* Cycript.framework */,
+				7566B21D1F7E026E00AD7BE0 /* JavaScriptCore.framework */,
+				7566B21F1F7E026E00AD7BE0 /* RevealServer.framework */,
+				7566B2211F7E026E00AD7BE0 /* Foundation.framework */,
+				7566B2231F7E026E00AD7BE0 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7566B2251F7E026E00AD7BE0 /* skywalkerDylib */ = {
+			isa = PBXGroup;
+			children = (
+				7566B2331F7E026E00AD7BE0 /* skywalkerDylib.xm */,
+				7566B2341F7E026E00AD7BE0 /* skywalkerDylib.mm */,
+				7566B2361F7E026E00AD7BE0 /* skywalkerDylib.h */,
+				7566B2381F7E026E00AD7BE0 /* skywalkerDylib.m */,
+				7566B2281F7E026E00AD7BE0 /* CaptainHook */,
+				7566B22B1F7E026E00AD7BE0 /* AntiAntiDebug */,
+				7566B22E1F7E026E00AD7BE0 /* fishhook */,
+				7566B2261F7E026E00AD7BE0 /* Supporting Files */,
+			);
+			path = skywalkerDylib;
+			sourceTree = "<group>";
+		};
+		7566B2261F7E026E00AD7BE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7566B2271F7E026E00AD7BE0 /* skywalkerDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7566B2281F7E026E00AD7BE0 /* CaptainHook */ = {
+			isa = PBXGroup;
+			children = (
+				7566B2291F7E026E00AD7BE0 /* CaptainHook.h */,
+			);
+			name = CaptainHook;
+			sourceTree = "<group>";
+		};
+		7566B22B1F7E026E00AD7BE0 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				7566B22C1F7E026E00AD7BE0 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		7566B22E1F7E026E00AD7BE0 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				7566B22F1F7E026E00AD7BE0 /* fishhook.c */,
+				7566B2311F7E026E00AD7BE0 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7566B2141F7E026E00AD7BE0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7566B22A1F7E026E00AD7BE0 /* CaptainHook.h in Headers */,
+				7566B2371F7E026E00AD7BE0 /* skywalkerDylib.h in Headers */,
+				7566B2321F7E026E00AD7BE0 /* fishhook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7566B2071F7E026E00AD7BE0 /* skywalker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7566B23F1F7E026E00AD7BE0 /* Build configuration list for PBXNativeTarget "skywalker" */;
+			buildPhases = (
+				7566B2011F7E026E00AD7BE0 /* Sources */,
+				7566B2021F7E026E00AD7BE0 /* Frameworks */,
+				7566B2031F7E026E00AD7BE0 /* ShellScript */,
+				7566B2041F7E026E00AD7BE0 /* Resources */,
+				7566B2051F7E026E00AD7BE0 /* CopyFiles */,
+				7566B2061F7E026E00AD7BE0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7566B2191F7E026E00AD7BE0 /* PBXTargetDependency */,
+			);
+			name = skywalker;
+			productName = skywalker;
+			productReference = 7566B2081F7E026E00AD7BE0 /* skywalker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7566B2151F7E026E00AD7BE0 /* skywalkerDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7566B23C1F7E026E00AD7BE0 /* Build configuration list for PBXNativeTarget "skywalkerDylib" */;
+			buildPhases = (
+				7566B2111F7E026E00AD7BE0 /* ShellScript */,
+				7566B2121F7E026E00AD7BE0 /* Sources */,
+				7566B2131F7E026E00AD7BE0 /* Frameworks */,
+				7566B2141F7E026E00AD7BE0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = skywalkerDylib;
+			productName = skywalkerDylib;
+			productReference = 7566B2161F7E026E00AD7BE0 /* libskywalkerDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7566B1FD1F7E026E00AD7BE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Harry Twan";
+				TargetAttributes = {
+					7566B2071F7E026E00AD7BE0 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					7566B2151F7E026E00AD7BE0 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7566B2001F7E026E00AD7BE0 /* Build configuration list for PBXProject "skywalker" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7566B1FC1F7E026E00AD7BE0;
+			productRefGroup = 7566B2091F7E026E00AD7BE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7566B2071F7E026E00AD7BE0 /* skywalker */,
+				7566B2151F7E026E00AD7BE0 /* skywalkerDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7566B2041F7E026E00AD7BE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7566B20F1F7E026E00AD7BE0 /* put ipa or app here in Resources */,
+				7566B20C1F7E026E00AD7BE0 /* MethodTraceConfig.plist in Resources */,
+				7566B2431F7E029600AD7BE0 /* skywalker.ipa in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7566B2031F7E026E00AD7BE0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		7566B2061F7E026E00AD7BE0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		7566B2111F7E026E00AD7BE0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7566B2011F7E026E00AD7BE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7566B2121F7E026E00AD7BE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7566B2391F7E026E00AD7BE0 /* skywalkerDylib.m in Sources */,
+				7566B2351F7E026E00AD7BE0 /* skywalkerDylib.mm in Sources */,
+				7566B2301F7E026E00AD7BE0 /* fishhook.c in Sources */,
+				7566B22D1F7E026E00AD7BE0 /* AntiAntiDebug.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7566B2191F7E026E00AD7BE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7566B2151F7E026E00AD7BE0 /* skywalkerDylib */;
+			targetProxy = 7566B2181F7E026E00AD7BE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7566B23A1F7E026E00AD7BE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7566B23B1F7E026E00AD7BE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7566B23D1F7E026E00AD7BE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DNL5G5M9A8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "skywalkerDylib/skywalkerDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libskywalkerDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"skywalkerDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		7566B23E1F7E026E00AD7BE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = DNL5G5M9A8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "skywalkerDylib/skywalkerDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libskywalkerDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"skywalkerDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7566B2401F7E026E00AD7BE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DNL5G5M9A8;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = skywalker/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = gua.desgard.skywalker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7566B2411F7E026E00AD7BE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DNL5G5M9A8;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = skywalker/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = gua.desgard.skywalker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7566B2001F7E026E00AD7BE0 /* Build configuration list for PBXProject "skywalker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7566B23A1F7E026E00AD7BE0 /* Debug */,
+				7566B23B1F7E026E00AD7BE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7566B23C1F7E026E00AD7BE0 /* Build configuration list for PBXNativeTarget "skywalkerDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7566B23D1F7E026E00AD7BE0 /* Debug */,
+				7566B23E1F7E026E00AD7BE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7566B23F1F7E026E00AD7BE0 /* Build configuration list for PBXNativeTarget "skywalker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7566B2401F7E026E00AD7BE0 /* Debug */,
+				7566B2411F7E026E00AD7BE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7566B1FD1F7E026E00AD7BE0 /* Project object */;
+}
